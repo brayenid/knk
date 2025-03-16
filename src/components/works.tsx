@@ -66,7 +66,7 @@ export default function Works() {
     <div
       className="bg-[url(/ctabg.svg)] bg-cover md:min-h-screen flex text-center w-full flex-col text-white gap-8"
       id="works">
-      <div className="container !py-16">
+      <div className="container !py-16 !pr-0 sm:!pr-8">
         <h2 className="text-2xl md:text-3xl uppercase tracking-widest font-bold mb-8">Yang Kami Kerjakan</h2>
         <main className="flex gap-4 overflow-x-auto sm:grid sm:grid-cols-2 xl:grid-cols-3 text-left scrollbar-hidden">
           {data.map((d, i) => (
