@@ -16,5 +16,5 @@ body {
 }
 
 .container {
-  @apply max-w-screen-xl p-12 mx-auto;
+  @apply max-w-screen-xl p-8 mx-auto;
 }

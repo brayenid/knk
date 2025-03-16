@@ -9,7 +9,7 @@ interface CardProps {
 
 function Card({ title, description, icon }: CardProps) {
   return (
-    <div className="bg-gray-900 p-4 space-y-8 rounded-xl">
+    <div className="bg-gray-900 p-4 space-y-8 rounded-xl min-w-[80%] sm:min-w-0">
       <div className="flex w-full justify-center bg-slate-800 p-8 text-slate-400">{icon}</div>
       <div className="">
         <h3
