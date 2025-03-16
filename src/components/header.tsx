@@ -12,15 +12,21 @@ export default function Header() {
       </div>
       <ul className="flex gap-4 tracking-widest uppercase flex-wrap justify-center text-xs md:text-base p-4 text-gray-200 items-center flex-col sm:flex-row">
         <li>
-          <a href="#about">Tentang</a>
+          <a className="styled" href="#about">
+            Tentang
+          </a>
         </li>
         <div className="divider"></div>
         <li>
-          <a href="#works">Yang Kami Kerjakan</a>
+          <a className="styled" href="#works">
+            Yang Kami Kerjakan
+          </a>
         </li>
         <div className="divider"></div>
         <li>
-          <a href="#cta">Kontak</a>
+          <a className="styled" href="#cta">
+            Kontak
+          </a>
         </li>
       </ul>
     </header>

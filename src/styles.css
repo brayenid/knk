@@ -6,15 +6,32 @@ body {
   @apply font-poppins;
 }
 
+::selection {
+  background-color: maroon;
+  color: white; /* Agar teks tetap terbaca */
+}
+
 .text-outline {
   -webkit-text-stroke: 0.8px #aaa; /* Tebal & warna stroke */
   color: transparent; /* Membuat fill transparan */
 }
 
 .divider {
-  @apply w-2 h-2 bg-gray-600 rounded-full hidden md:block;
+  @apply w-2 h-2 bg-gray-600 rounded-full hidden sm:block;
 }
 
 .container {
   @apply max-w-screen-xl p-8 mx-auto;
+}
+
+a.styled {
+  @apply relative pl-6;
+}
+
+a.styled:hover:before {
+  @apply w-4;
+}
+
+a.styled::before {
+  @apply content-[''] absolute left-0 top-[45%] w-0 h-1 bg-rose-600 transition-all;
 }

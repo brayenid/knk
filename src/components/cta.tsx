@@ -13,7 +13,7 @@ export default function CTA() {
             href="https://wa.me/6282251428140?text=Halo, saya ingin bertanya perihal jasa KNK."
             target="_blank"
             rel="noopener noreferrer"
-            className="flex text-lg items-center gap-4 justify-center border rounded-xl p-2 md:p-3 transition-all hover:bg-rose-800">
+            className="flex text-lg items-center gap-4 justify-center border rounded-xl p-2 md:p-3 transition-all hover:bg-rose-800 hover:bg-opacity-20">
             <MdiWhatsapp className="w-5 h-5" /> Pesan WA
           </a>
           <div className="opacity-50 font-light">atau</div>
