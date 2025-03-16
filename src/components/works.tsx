@@ -64,7 +64,7 @@ export default function Works() {
   ]
   return (
     <div
-      className="bg-[url(/headerbg.svg)] bg-cover min-h-screen flex items-center justify-center text-center w-full flex-col text-white gap-8"
+      className="bg-[url(/ctabg.svg)] bg-cover md:min-h-screen flex text-center w-full flex-col text-white gap-8"
       id="works">
       <div className="container !py-16">
         <h2 className="text-2xl md:text-3xl uppercase tracking-widest font-bold mb-8">Yang Kami Kerjakan</h2>
