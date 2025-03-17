@@ -1,6 +1,38 @@
 {
   "page": {
     "about": "Karya Nusantara Kreatif (KNK) adalah perusahaan kreatif berbentuk Persekutuan Komanditer (CV) yang bergerak di berbagai sektor layanan, mulai dari penyelenggara acara hingga perdagangan teknologi dan jasa digital. Didirikan di Kota Sendawar Kutai Barat dengan semangat memajukan industri kreatif khususnya Kutai Barat, kami menggabungkan inovasi, teknologi, dan seni untuk menciptakan solusi yang menyeluruh bagi klien. Jangan ragu untuk bekerja sama dengan kami, atau ingin sekedar berbicara mengenai ide proyek anda? Hubungi kami.",
-    "address": " Jl. D.I. Panjaitan RT 014, Busur, Kec. Barong Tongkok, Kabupaten Kutai Barat, Kalimantan Timur 75576"
+    "address": " Jl. D.I. Panjaitan RT 014, Busur, Kec. Barong Tongkok, Kabupaten Kutai Barat, Kalimantan Timur 75576",
+    "gallery": [
+      {
+        "title": "Podcast Trakindo",
+        "description": "Menyediakan peralatan dan pemasangan alarm api untuk PT Trakindo Utama Cabang Melak.",
+        "img": "/works/pemasangan alarm api pt trakindo.webp"
+      },
+      {
+        "title": "Starlink",
+        "description": "Menyediakan peralatan dan pemasangan Starlink.",
+        "img": "/works/pemasangan starlink.webp"
+      },
+      {
+        "title": "Starlink",
+        "description": "Menyediakan peralatan Starlink.",
+        "img": "/works/pengadaan starlink.webp"
+      },
+      {
+        "title": "Sarana dan Prasarana Desa",
+        "description": "Menyediakan keperluan sarana dan prasarana desa.",
+        "img": "/works/pengantaran sapras desa.webp"
+      },
+      {
+        "title": "Penyewaan Alat PT. BEK",
+        "description": "Menyediakan peralatan dan penyewaan unit laptop dan Starlink di PT. BEK",
+        "img": "/works/penyewaan starlink dan laptop BEK.webp"
+      },
+      {
+        "title": "Podcast Trakindo",
+        "description": "Menyediakan peralatan dan pembuatan Podcast untuk PT Trakindo Utama Cabang Melak.",
+        "img": "/works/podcast trakindo.webp"
+      }
+    ]
   }
 }
