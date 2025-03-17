@@ -10,7 +10,7 @@ function Card({ title, description, img }: CardProps) {
   return (
     <div className=" border border-gray-300 text-gray-800 p-4 space-y-4 rounded-xl min-w-[80%] sm:min-w-0">
       <div className="rounded-xl overflow-hidden">
-        <img src={img} alt={title} title={title} />
+        <img src={img} alt={title} title={title} loading="lazy" />
       </div>
       <div className="text-center">
         <h3
