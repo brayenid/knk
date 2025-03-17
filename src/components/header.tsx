@@ -24,7 +24,7 @@ export default function Header() {
         </li>
         <div className="divider"></div>
         <li>
-          <a className="styled" href="#works">
+          <a className="styled" href="#gallery">
             Galeri
           </a>
         </li>

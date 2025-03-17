@@ -14,7 +14,7 @@ function Card({ title, description, img }: CardProps) {
       </div>
       <div className="text-center">
         <h3
-          className="mb-2 text-lg
+          className="mb-2 text-base sm:text-lg
         uppercase tracking-widest">
           {title}
         </h3>
@@ -26,7 +26,7 @@ function Card({ title, description, img }: CardProps) {
 
 export default function Gallery() {
   return (
-    <div className="bg-gray-200 md:min-h-screen flex text-center w-full flex-col text-gray-900 gap-8" id="works">
+    <div className="bg-gray-200 md:min-h-screen flex text-center w-full flex-col text-gray-900 gap-8" id="gallery">
       <div className="container !py-16 !pr-0 sm:!pr-8">
         <h2 className="text-2xl md:text-3xl uppercase tracking-widest font-bold mb-8">Galeri</h2>
         <main className="flex gap-4 overflow-x-auto sm:grid sm:grid-cols-2 xl:grid-cols-3 text-left scrollbar-hidden">
