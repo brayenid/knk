@@ -11,11 +11,10 @@ export default function CTA() {
         className={cn(
           'absolute inset-0',
           '[background-size:20px_20px]',
-          '[background-image:radial-gradient(#d4d4d4_1px,transparent_1px)]',
-          'dark:[background-image:radial-gradient(#404040_1px,transparent_1px)]'
+          '[background-image:radial-gradient(#444_1px,transparent_1px)]'
         )}
       />
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-gray-900"></div>
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-gray-900 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] "></div>
       <div className="mb-6 gap-4 p-8 relative">
         <h2 className="text-3xl md:text-5xl uppercase tracking-widest font-bold mb-6">Hubungi Kami</h2>
         <div className="space-y-7">
