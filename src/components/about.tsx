@@ -4,12 +4,16 @@ import { MdiWhatsapp } from './icons/wa'
 
 export default function About() {
   return (
-    <div className="bg-rose-950 min-h-screen text-white flex flex-col justify-center items-center" id="about">
+    <div className="bg-gray-900 min-h-screen text-white flex flex-col justify-center items-center relative" id="about">
+      <div className="absolute w-96 h-96 opacity-40">
+        <div className="absolute w-36 h-36 rounded-full bg-blue-500 opacity-80 blur-3xl bottom-5 right-0"></div>
+      </div>
+
       <div className="container space-y-8">
         <div className="flex mb-6 gap-4">
           <h2 className="text-2xl md:text-5xl uppercase tracking-widest font-bold">Tentang</h2>
           <div className="flex w-full items-center">
-            <div className="w-full h-2 bg-white"></div>
+            <div className="w-full h-1 bg-white"></div>
           </div>
         </div>
         <article className="font-extralight text-lg md:text-xl leading-loose">{data.page.about}</article>

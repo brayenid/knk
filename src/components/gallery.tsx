@@ -8,7 +8,7 @@ interface CardProps {
 
 function Card({ title, description, img }: CardProps) {
   return (
-    <div className=" border border-gray-300 text-gray-800 p-4 space-y-4 rounded-xl min-w-[80%] sm:min-w-0">
+    <div className="bg-gradient-to-bl from-gray-900 to-slate-700 border border-gray-800 text-gray-100 p-4 space-y-4 rounded-xl min-w-[80%] sm:min-w-0">
       <div className="rounded-xl overflow-hidden">
         <img src={img} alt={title} title={title} loading="lazy" />
       </div>
@@ -26,7 +26,7 @@ function Card({ title, description, img }: CardProps) {
 
 export default function Gallery() {
   return (
-    <div className="bg-gray-200 md:min-h-screen flex text-center w-full flex-col text-gray-900 gap-8" id="gallery">
+    <div className="bg-gray-900 md:min-h-screen flex text-center w-full flex-col text-gray-100 gap-8" id="gallery">
       <div className="container !py-16 !pr-0 sm:!pr-8">
         <h2 className="text-2xl md:text-3xl uppercase tracking-widest font-bold mb-8">Galeri</h2>
         <main className="flex gap-4 overflow-x-auto sm:grid sm:grid-cols-2 xl:grid-cols-3 text-left scrollbar-hidden">

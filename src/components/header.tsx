@@ -1,6 +1,16 @@
 export default function Header() {
   return (
-    <header className="bg-[url(/headerbg.svg)] bg-cover min-h-screen flex items-center justify-center text-center w-full flex-col text-white gap-8">
+    <header className="bg-gray-900 min-h-screen flex items-center justify-center text-center w-full flex-col text-white gap-8 relative">
+      <div className="lines">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
+      <div className="absolute w-64 h-64">
+        <div className="absolute w-36 h-36 rounded-full bg-red-500 opacity-80 blur-3xl top-5 left-8"></div>
+        <div className="absolute w-36 h-36 rounded-full bg-blue-500 opacity-80 blur-3xl bottom-5 right-8"></div>
+      </div>
+
       <div className="">
         <div className="md:w-96 w-64 mx-auto">
           <img

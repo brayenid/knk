@@ -9,12 +9,12 @@ interface CardProps {
 
 function Card({ title, description, icon }: CardProps) {
   return (
-    <div className="bg-gray-900 p-4 space-y-8 rounded-xl min-w-[80%] sm:min-w-0">
-      <div className="flex w-full justify-center bg-slate-800 p-8 text-slate-400">{icon}</div>
-      <div className="">
+    <div className="bg-gradient-to-bl from-gray-900 to-slate-700 p-4 space-y-8 border border-gray-800 rounded-xl min-w-[80%] sm:min-w-0">
+      <div className="flex w-full justify-center bg-slate-700 p-8 text-slate-400">{icon}</div>
+      <div className="text-center">
         <h3
-          className="mb-4 font-bold text-lg
-         md:text-xl">
+          className="mb-4 text-lg
+         md:text-xl uppercase tracking-widest">
           {title}
         </h3>
         <article className="font-light">{description}</article>
@@ -63,10 +63,12 @@ export default function Works() {
     }
   ]
   return (
-    <div
-      className="bg-[url(/ctabg.svg)] bg-cover md:min-h-screen flex text-center w-full flex-col text-white gap-8"
-      id="works">
-      <div className="container !py-16 !pr-0 sm:!pr-8">
+    <div className="relative bg-gray-900 md:min-h-screen flex text-center w-full flex-col text-white gap-8" id="works">
+      <div className="absolute w-full h-full opacity-45">
+        <div className="absolute w-36 h-36 rounded-full bg-rose-500 opacity-80 blur-3xl top-5 left-8"></div>
+        <div className="absolute w-36 h-36 rounded-full bg-blue-500 opacity-80 blur-3xl bottom-5 right-8"></div>
+      </div>
+      <div className="container !py-16 !pr-0 sm:!pr-8 relative">
         <h2 className="text-2xl md:text-3xl uppercase tracking-widest font-bold mb-8">Yang Kami Kerjakan</h2>
         <main className="flex gap-4 overflow-x-auto sm:grid sm:grid-cols-2 xl:grid-cols-3 text-left scrollbar-hidden">
           {data.map((d, i) => (
