@@ -25,15 +25,7 @@ body {
 }
 
 a.styled {
-  @apply relative sm:pl-6 hover:pl-6 sm:hover:pl-0 transition-all;
-}
-
-a.styled:hover:before {
-  @apply w-4;
-}
-
-a.styled::before {
-  @apply content-[''] absolute left-0 top-[45%] w-0 h-1 bg-rose-600 transition-all;
+  @apply relative md:pl-6 hover:text-rose-500 transition-all;
 }
 
 .lines {

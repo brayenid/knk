@@ -9,12 +9,12 @@ interface CardProps {
 
 function Card({ title, description, icon }: CardProps) {
   return (
-    <div className="bg-gradient-to-bl from-gray-900 to-slate-700 p-4 space-y-8 border border-gray-800 rounded-xl min-w-[80%] sm:min-w-0">
-      <div className="flex w-full justify-center bg-slate-700 p-8 text-slate-400">{icon}</div>
+    <div className="bg-gradient-to-bl from-gray-900 to-slate-800 p-4 space-y-8 border border-gray-700 rounded-xl min-w-[80%] sm:min-w-0">
+      <div className="flex w-full justify-center bg-slate-800 p-8 text-slate-400">{icon}</div>
       <div className="text-center">
         <h3
           className="mb-4 text-lg
-         md:text-xl uppercase tracking-widest">
+         md:text-xl uppercase tracking-widest font-semibold">
           {title}
         </h3>
         <article className="font-light">{description}</article>

@@ -8,14 +8,14 @@ interface CardProps {
 
 function Card({ title, description, img }: CardProps) {
   return (
-    <div className="bg-gradient-to-bl from-gray-900 to-slate-700 border border-gray-800 text-gray-100 p-4 space-y-4 rounded-xl min-w-[80%] sm:min-w-0">
+    <div className="bg-gradient-to-bl from-gray-900 to-slate-800 border border-gray-700 text-gray-100 p-4 space-y-4 rounded-xl min-w-[80%] sm:min-w-0">
       <div className="rounded-xl overflow-hidden">
         <img src={img} alt={title} title={title} loading="lazy" />
       </div>
       <div className="text-center">
         <h3
           className="mb-2 text-base sm:text-lg
-        uppercase tracking-widest">
+        uppercase tracking-widest font-semibold">
           {title}
         </h3>
         <article className="font-light text-sm">{description}</article>
