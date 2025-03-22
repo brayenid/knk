@@ -1,4 +1,5 @@
 import data from '@/data/base.json'
+import { motion } from 'motion/react'
 
 interface CardProps {
   title: string
@@ -8,9 +9,14 @@ interface CardProps {
 
 function Card({ title, description, img }: CardProps) {
   return (
-    <div className="bg-gradient-to-bl from-gray-900 to-slate-800 border border-gray-700 text-gray-100 p-4 space-y-4 rounded-xl min-w-[80%] sm:min-w-0">
-      <div className="rounded-xl overflow-hidden">
-        <img src={img} alt={title} title={title} loading="lazy" />
+    <motion.div
+      initial={{ scale: 0.5, opacity: 0 }}
+      whileInView={{ scale: 0.99, opacity: 1 }}
+      whileHover={{ scale: 0.97 }}
+      whileTap={{ scale: 0.96 }}
+      className="bg-gradient-to-bl from-gray-900 to-slate-800 border border-gray-700 text-gray-100 p-4 space-y-4 rounded-xl min-w-[80%] sm:min-w-0">
+      <div className="rounded-xl overflow-hidden min-h-96">
+        <img src={img} alt={title} title={title} />
       </div>
       <div className="text-center">
         <h3
@@ -20,7 +26,7 @@ function Card({ title, description, img }: CardProps) {
         </h3>
         <article className="font-light text-sm">{description}</article>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,5 +1,6 @@
 import { CalendarCheck2, CameraIcon, ComputerIcon, MusicIcon, Network, Ticket } from 'lucide-react'
 import { JSX } from 'react'
+import { motion } from 'motion/react'
 
 interface CardProps {
   title: string
@@ -9,7 +10,12 @@ interface CardProps {
 
 function Card({ title, description, icon }: CardProps) {
   return (
-    <div className="bg-gradient-to-bl from-gray-900 to-slate-800 p-4 space-y-8 border border-gray-700 rounded-xl min-w-[80%] sm:min-w-0">
+    <motion.div
+      initial={{ scale: 0.5, opacity: 0 }}
+      whileInView={{ scale: 0.99, opacity: 1 }}
+      whileHover={{ scale: 0.97 }}
+      whileTap={{ scale: 0.96 }}
+      className="bg-gradient-to-bl from-gray-900 to-slate-800 p-4 space-y-8 border border-gray-700 rounded-xl min-w-[80%] sm:min-w-0 overflow-hidden">
       <div className="flex w-full justify-center bg-slate-800 p-8 text-slate-400">{icon}</div>
       <div className="text-center">
         <h3
@@ -19,7 +25,7 @@ function Card({ title, description, icon }: CardProps) {
         </h3>
         <article className="font-light">{description}</article>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
