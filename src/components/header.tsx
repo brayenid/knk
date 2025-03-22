@@ -16,11 +16,10 @@ export default function Header() {
 
       <motion.div
         initial={{ scale: 0 }}
-        whileInView={{ scale: 1 }}
+        animate={{ scale: 1 }}
         whileTap={{ scale: 0.95 }}
         drag
-        dragDirectionLock
-        dragConstraints={{ top: 5, right: 5, bottom: 5, left: 5 }}
+        dragConstraints={{ top: 5, right: 5, bottom: 0, left: 5 }}
         dragTransition={{ bounceStiffness: 500, bounceDamping: 15 }}
         dragElastic={0.2}
         whileDrag={{ cursor: 'grabbing', scale: 0.97 }}
