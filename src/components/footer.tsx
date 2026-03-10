@@ -54,10 +54,10 @@ export default function Footer() {
                 <Phone className="w-5 h-5 text-rose-500 shrink-0" />
                 <span>+{data.contact.whatsapp}</span>
               </li>
-              {data.contact.email && (
+              {data?.contact?.email && (
                 <li className="flex items-center gap-3 text-gray-400">
                   <Mail className="w-5 h-5 text-rose-500 shrink-0" />
-                  <span>{data.contact.email}</span>
+                  <span>{data?.contact?.email}</span>
                 </li>
               )}
             </ul>
