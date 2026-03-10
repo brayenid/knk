@@ -1,20 +1,24 @@
+import Navbar from './components/navbar'
+import Hero from './components/hero'
 import About from './components/about'
-import Credit from './components/credit'
-import CTA from './components/cta'
-import Gallery from './components/gallery'
-import Header from './components/header'
-import Works from './components/works'
+import Services from './components/services'
+import Portfolio from './components/portfolio'
+import Contact from './components/contact'
+import Footer from './components/footer'
 
 function App() {
   return (
-    <>
-      <Header />
-      <About />
-      <Works />
-      <Gallery />
-      <CTA />
-      <Credit />
-    </>
+    <div className="bg-[#050508] text-[#f0f0f5] selection:bg-rose-500 selection:text-white">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Portfolio />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   )
 }
 

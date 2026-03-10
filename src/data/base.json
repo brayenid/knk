@@ -1,48 +1,170 @@
 {
-  "page": {
-    "about": "Karya Nusantara Kreatif (KNK) adalah perusahaan kreatif berbentuk Persekutuan Komanditer (CV) yang bergerak di berbagai sektor layanan, mulai dari penyelenggara acara hingga perdagangan teknologi dan jasa digital. Didirikan di Kota Sendawar Kutai Barat dengan semangat memajukan industri kreatif khususnya Kutai Barat, kami menggabungkan inovasi, teknologi, dan seni untuk menciptakan solusi yang menyeluruh bagi klien. Jangan ragu untuk bekerja sama dengan kami, atau ingin sekedar berbicara mengenai ide proyek anda? Hubungi kami.",
-    "address": " Jl. D.I. Panjaitan RT 014, Busur, Kec. Barong Tongkok, Kabupaten Kutai Barat, Kalimantan Timur 75576",
-    "gallery": [
-      {
-        "title": "Sistem Tiket Kitaloket.com",
-        "description": "Menyediakan sistem tiket untuk penjualan tiket online, dengan telah menjual ribuan tiket kegiatan.",
-        "img": "/works/kitaloket.png"
-      },
-      {
-        "title": "Event Organizer",
-        "description": "Menjadi bagian organisator kegiatan Lamunan Fest 2025 di Kutai Barat yang diselenggarakan pada 13 Agustus 2025.",
-        "img": "/works/lamunan.webp"
-      },
-      {
-        "title": "Podcast Trakindo",
-        "description": "Menyediakan peralatan dan pemasangan alarm api untuk PT Trakindo Utama Cabang Melak.",
-        "img": "/works/pemasangan alarm api pt trakindo.webp"
-      },
-      {
-        "title": "Starlink",
-        "description": "Menyediakan peralatan dan pemasangan Starlink.",
-        "img": "/works/pemasangan starlink.webp"
-      },
-      {
-        "title": "Starlink",
-        "description": "Menyediakan peralatan Starlink.",
-        "img": "/works/pengadaan starlink.webp"
-      },
-      {
-        "title": "Sarana dan Prasarana Desa",
-        "description": "Menyediakan keperluan sarana dan prasarana desa.",
-        "img": "/works/pengantaran sapras desa.webp"
-      },
-      {
-        "title": "Penyewaan Alat PT. BEK",
-        "description": "Menyediakan peralatan dan penyewaan unit laptop dan Starlink di PT. BEK",
-        "img": "/works/penyewaan starlink dan laptop BEK.webp"
-      },
-      {
-        "title": "Podcast Trakindo",
-        "description": "Menyediakan peralatan dan pembuatan Podcast untuk PT Trakindo Utama Cabang Melak.",
-        "img": "/works/podcast trakindo.webp"
-      }
+  "site": {
+    "name": "KNK",
+    "fullName": "Karya Nusantara Kreatif",
+    "tagline": "Ciptakan Karya, Hidupkan Kreasi",
+    "description": "Mitra kreatif terpercaya untuk Event Organizer, Tiket Online, Pengadaan Teknologi, dan solusi bisnis digital di Kutai Barat.",
+    "logo": "/knk.png",
+    "favicon": "/favicon.ico"
+  },
+  "nav": [
+    { "label": "Tentang", "href": "#about" },
+    { "label": "Layanan", "href": "#services" },
+    { "label": "Portofolio", "href": "#portfolio" },
+    { "label": "Kontak", "href": "#contact" }
+  ],
+  "hero": {
+    "badge": "Solusi Kreatif & Digital",
+    "headline": "Ciptakan Karya,",
+    "headlineAccent": "Hidupkan Kreasi",
+    "subtext": "Kami hadir sebagai mitra terpercaya untuk event organizer, sistem tiket digital, pengadaan teknologi, dan berbagai kebutuhan kreatif bisnis Anda di Kutai Barat.",
+    "cta": {
+      "primary": { "label": "Mulai Berkolaborasi", "href": "#contact" },
+      "secondary": { "label": "Lihat Karya Kami", "href": "#portfolio" }
+    },
+    "stats": [
+      { "value": "50+", "label": "Proyek Selesai" },
+      { "value": "30+", "label": "Klien Puas" },
+      { "value": "5+", "label": "Tahun Pengalaman" }
     ]
+  },
+  "about": {
+    "title": "Tentang KNK",
+    "subtitle": "Siapa Kami",
+    "body": "Karya Nusantara Kreatif (KNK) adalah perusahaan kreatif berbentuk Persekutuan Komanditer (CV) yang bergerak di berbagai sektor layanan, mulai dari penyelenggara acara hingga perdagangan teknologi dan jasa digital. Didirikan di Kota Sendawar Kutai Barat dengan semangat memajukan industri kreatif, kami menggabungkan inovasi, teknologi, dan seni untuk menciptakan solusi menyeluruh bagi klien.",
+    "highlights": [
+      { "icon": "shield", "label": "Terpercaya & Profesional" },
+      { "icon": "zap", "label": "Inovatif & Kreatif" },
+      { "icon": "map-pin", "label": "Berbasis di Kutai Barat" }
+    ],
+    "image": "/KNK.jpg"
+  },
+  "services": [
+    {
+      "icon": "calendar-check",
+      "title": "Event Organizer",
+      "description": "Menjadi rekan Anda dalam membangun acara yang berkesan dan sesuai visi. Dari konsep hingga eksekusi.",
+      "color": "rose"
+    },
+    {
+      "icon": "ticket",
+      "title": "Sistem Tiket Online",
+      "description": "Solusi penjualan tiket digital yang mudah dan aman melalui platform Kitaloket.com untuk semua jenis acara.",
+      "color": "violet"
+    },
+    {
+      "icon": "monitor",
+      "title": "Pengadaan Piranti Keras",
+      "description": "Menyediakan peralatan teknologi berkualitas untuk kebutuhan usaha, kantor, dan operasional Anda.",
+      "color": "sky"
+    },
+    {
+      "icon": "globe",
+      "title": "Pengadaan Piranti Lunak",
+      "description": "Pengembangan website, aplikasi, dan solusi perangkat lunak custom untuk mendukung pertumbuhan bisnis.",
+      "color": "emerald"
+    },
+    {
+      "icon": "camera",
+      "title": "Fotografi & Videografi",
+      "description": "Mengabadikan momen terbaik dalam setiap kegiatan dengan kualitas visual profesional.",
+      "color": "amber"
+    },
+    {
+      "icon": "music",
+      "title": "Produksi Musik",
+      "description": "Produksi jingle, latar musik, dan konten audio kreatif untuk kebutuhan branding dan acara Anda.",
+      "color": "pink"
+    },
+    {
+      "icon": "printer",
+      "title": "Percetakan Digital",
+      "description": "Layanan cetak digital berkualitas tinggi untuk kebutuhan promosi, branding, dan dokumentasi.",
+      "color": "cyan"
+    },
+    {
+      "icon": "satellite-dish",
+      "title": "Penyewaan Peralatan",
+      "description": "Sewa Starlink, laptop, dan peralatan teknologi untuk kebutuhan sementara di lokasi terpencil.",
+      "color": "indigo"
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Sistem Tiket Kitaloket.com",
+      "category": "Ticketing",
+      "description": "Menyediakan sistem tiket untuk penjualan tiket online, dengan telah menjual ribuan tiket kegiatan.",
+      "img": "/works/kitaloket2.png",
+      "tags": ["Ticketing", "Digital", "Platform"]
+    },
+    {
+      "title": "Event Organizer",
+      "category": "EO",
+      "description": "Menjadi bagian organisator kegiatan Lamunan Fest 2025 di Kutai Barat yang diselenggarakan pada 13 Agustus 2025.",
+      "img": "/works/lamunan.webp",
+      "tags": ["Event", "Festival", "Musik"]
+    },
+    {
+      "title": "Event Organizer",
+      "category": "EO",
+      "description": "Menjadi bagian organisator kegiatan Kubar Combat Championship di Kutai Barat yang diselenggarakan pada 17 Februari 2026.",
+      "img": "/works/kcc.webp",
+      "tags": ["Event", "Olahraga", "Tinju"]
+    },
+    {
+      "title": "Podcast Trakindo",
+      "category": "Produksi",
+      "description": "Menyediakan peralatan dan pembuatan Podcast untuk PT Trakindo Utama Cabang Melak.",
+      "img": "/works/podcast trakindo.webp",
+      "tags": ["Podcast", "Produksi", "B2B"]
+    },
+    {
+      "title": "Pemasangan Alarm Api",
+      "category": "Jasa",
+      "description": "Menyediakan peralatan dan pemasangan alarm api untuk PT Trakindo Utama Cabang Melak.",
+      "img": "/works/pemasangan alarm api pt trakindo.webp",
+      "tags": ["Instalasi", "Keamanan", "B2B"]
+    },
+    {
+      "title": "Pemasangan Starlink",
+      "category": "Teknologi",
+      "description": "Menyediakan peralatan dan pemasangan Starlink untuk konektivitas internet berkecepatan tinggi.",
+      "img": "/works/pemasangan starlink.webp",
+      "tags": ["Starlink", "Internet", "Instalasi"]
+    },
+    {
+      "title": "Pengadaan Starlink",
+      "category": "Teknologi",
+      "description": "Menyediakan peralatan Starlink untuk area terpencil di Kutai Barat.",
+      "img": "/works/pengadaan starlink.webp",
+      "tags": ["Starlink", "Pengadaan", "Internet"]
+    },
+    {
+      "title": "Sapras Desa",
+      "category": "Jasa",
+      "description": "Menyediakan keperluan sarana dan prasarana desa untuk mendukung pembangunan daerah.",
+      "img": "/works/pengantaran sapras desa.webp",
+      "tags": ["Desa", "Pengadaan", "Pemerintahan"]
+    },
+    {
+      "title": "Penyewaan Alat PT. BEK",
+      "category": "Sewa",
+      "description": "Menyediakan peralatan dan penyewaan unit laptop dan Starlink di PT. BEK.",
+      "img": "/works/penyewaan starlink dan laptop BEK.webp",
+      "tags": ["Sewa", "Laptop", "Starlink"]
+    }
+  ],
+  "contact": {
+    "title": "Siap Berkolaborasi?",
+    "subtitle": "Hubungi Kami",
+    "body": "Punya ide proyek atau ingin berkonsultasi? Jangan ragu untuk menghubungi kami. Tim KNK siap membantu mewujudkan visi Anda.",
+    "address": "Jl. D.I. Panjaitan RT 014, Busur, Kec. Barong Tongkok, Kabupaten Kutai Barat, Kalimantan Timur 75576",
+    "whatsapp": "6282251428140",
+    "whatsappText": "Halo, saya ingin bertanya perihal jasa KNK.",
+    "instagram": "karyanusantarakreatif"
+  },
+  "footer": {
+    "copyright": "© 2026 CV. Karya Nusantara Kreatif. Hak cipta dilindungi.",
+    "credit": "Dibuat dengan ❤ oleh Tim KNK"
   }
 }
