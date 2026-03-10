@@ -78,10 +78,10 @@ export default function About() {
           <div className="space-y-8">
             <motion.div {...fadeUp(0)}>
               <span className="section-label">{data.about.subtitle}</span>
-              <h2 className="section-title mt-3 text-white">{data.about.title}</h2>
+              <h2 className="section-title mt-3 text-slate-900 dark:text-white">{data.about.title}</h2>
             </motion.div>
 
-            <motion.p {...fadeUp(0.1)} className="text-gray-400 text-lg leading-relaxed">
+            <motion.p {...fadeUp(0.1)} className="text-slate-600 dark:text-gray-400 text-lg leading-relaxed">
               {data.about.body}
             </motion.p>
 
@@ -92,9 +92,9 @@ export default function About() {
                 return (
                   <div key={i} className="flex items-center gap-4">
                     <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-rose-400" />
+                      <Icon className="w-5 h-5 text-rose-500 dark:text-rose-400" />
                     </div>
-                    <span className="text-gray-200 font-medium">{h.label}</span>
+                    <span className="text-slate-700 dark:text-gray-200 font-medium">{h.label}</span>
                   </div>
                 )
               })}

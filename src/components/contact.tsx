@@ -38,8 +38,8 @@ export default function Contact() {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}>
             <span className="section-label">{data.contact.subtitle}</span>
-            <h2 className="section-title text-white mt-3">{data.contact.title}</h2>
-            <p className="text-gray-400 mt-4 text-lg leading-relaxed">{data.contact.body}</p>
+            <h2 className="section-title text-slate-900 dark:text-white mt-3">{data.contact.title}</h2>
+            <p className="text-slate-600 dark:text-gray-400 mt-4 text-lg leading-relaxed">{data.contact.body}</p>
           </motion.div>
 
           {/* Contact Cards */}
@@ -55,8 +55,10 @@ export default function Contact() {
                 <MessageCircle className="w-6 h-6 text-green-400" />
               </div>
               <div className="flex-1">
-                <div className="text-xs text-gray-500 uppercase tracking-wider font-medium">WhatsApp</div>
-                <div className="text-white font-semibold mt-0.5">Kirim Pesan Sekarang</div>
+                <div className="text-xs text-slate-500 dark:text-gray-500 uppercase tracking-wider font-medium">
+                  WhatsApp
+                </div>
+                <div className="text-slate-900 dark:text-white font-semibold mt-0.5">Kirim Pesan Sekarang</div>
               </div>
               <ArrowRight className="w-5 h-5 text-gray-500 group-hover:text-rose-400 group-hover:translate-x-1 transition-all" />
             </a>
@@ -67,8 +69,10 @@ export default function Contact() {
                 <Instagram className="w-6 h-6 text-pink-400" />
               </div>
               <div className="flex-1">
-                <div className="text-xs text-gray-500 uppercase tracking-wider font-medium">Instagram</div>
-                <div className="text-white font-semibold mt-0.5">@{data.contact.instagram}</div>
+                <div className="text-xs text-slate-500 dark:text-gray-500 uppercase tracking-wider font-medium">
+                  Instagram
+                </div>
+                <div className="text-slate-900 dark:text-white font-semibold mt-0.5">@{data.contact.instagram}</div>
               </div>
               <ArrowRight className="w-5 h-5 text-gray-500 group-hover:text-rose-400 group-hover:translate-x-1 transition-all" />
             </a>
@@ -79,8 +83,12 @@ export default function Contact() {
                 <MapPin className="w-6 h-6 text-rose-400" />
               </div>
               <div className="flex-1">
-                <div className="text-xs text-gray-500 uppercase tracking-wider font-medium">Alamat</div>
-                <div className="text-gray-300 text-sm mt-0.5 leading-relaxed">{data.contact.address}</div>
+                <div className="text-xs text-slate-500 dark:text-gray-500 uppercase tracking-wider font-medium">
+                  Alamat
+                </div>
+                <div className="text-slate-700 dark:text-gray-300 text-sm mt-0.5 leading-relaxed">
+                  {data.contact.address}
+                </div>
               </div>
             </div>
           </motion.div>

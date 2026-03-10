@@ -1,9 +1,15 @@
 import data from '@/data/base.json'
 import { Instagram, MapPin, Mail, Phone } from 'lucide-react'
 
-export default function Footer() {
+interface FooterProps {
+  isDark: boolean
+}
+
+export default function Footer({ isDark }: FooterProps) {
+  const logoSrc = isDark ? '/knk.png' : '/knk2.png'
+
   return (
-    <footer className="relative border-t border-white/5 bg-[#030305] pt-16 pb-8 overflow-hidden">
+    <footer className="relative border-t border-black/5 dark:border-white/5 bg-white dark:bg-[#030305] pt-16 pb-8 overflow-hidden transition-colors duration-300">
       {/* Background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-rose-500/5 blur-[120px] pointer-events-none" />
 
@@ -12,15 +18,15 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="md:col-span-5 lg:col-span-4">
             <a href="#" className="inline-block mb-6">
-              <img src={data.site.logo} alt={data.site.name} className="h-12 w-auto" />
+              <img src={logoSrc} alt={data.site.name} className="h-12 w-auto transition-all duration-300" />
             </a>
-            <p className="text-gray-400 leading-relaxed max-w-sm mb-8">{data.site.description}</p>
+            <p className="text-slate-600 dark:text-gray-400 leading-relaxed max-w-sm mb-8">{data.site.description}</p>
             <div className="flex items-center gap-4">
               <a
                 href={`https://instagram.com/${data.contact.instagram}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-rose-500 hover:border-rose-500 transition-all"
+                className="w-10 h-10 rounded-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:bg-rose-500 hover:border-rose-500 transition-all"
                 aria-label="Instagram">
                 <Instagram className="w-4 h-4" />
               </a>
@@ -30,11 +36,13 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="md:col-span-3 lg:col-span-2 lg:col-start-7">
-            <h3 className="text-white font-display font-bold mb-6">Tautan</h3>
+            <h3 className="text-slate-900 dark:text-white font-display font-bold mb-6">Tautan</h3>
             <ul className="space-y-4">
               {data.nav.map((item, i) => (
                 <li key={i}>
-                  <a href={item.href} className="text-gray-400 hover:text-rose-400 transition-colors">
+                  <a
+                    href={item.href}
+                    className="text-slate-600 dark:text-gray-400 hover:text-rose-500 transition-colors">
                     {item.label}
                   </a>
                 </li>
@@ -44,13 +52,13 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div className="md:col-span-4 lg:col-span-4">
-            <h3 className="text-white font-display font-bold mb-6">Hubungi Kami</h3>
+            <h3 className="text-slate-900 dark:text-white font-display font-bold mb-6">Hubungi Kami</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-gray-400">
+              <li className="flex items-start gap-3 text-slate-500 dark:text-gray-400">
                 <MapPin className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
                 <span className="leading-relaxed">{data.contact.address}</span>
               </li>
-              <li className="flex items-center gap-3 text-gray-400">
+              <li className="flex items-center gap-3 text-slate-500 dark:text-gray-400">
                 <Phone className="w-5 h-5 text-rose-500 shrink-0" />
                 <span>+{data.contact.whatsapp}</span>
               </li>
@@ -65,7 +73,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-white/5 text-sm text-gray-500">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-black/5 dark:border-white/5 text-sm text-gray-500">
           <p>{data.footer.copyright}</p>
           <p className="flex items-center gap-1">
             {data.footer.credit.split('❤')[0]}

@@ -36,10 +36,10 @@ function ServiceCard({ item, index }: { item: ServiceItem; index: number }) {
         <Icon className="w-7 h-7" />
       </div>
 
-      <h3 className="font-display text-lg font-bold text-white mb-2 group-hover:text-rose-400 transition-colors">
+      <h3 className="font-display text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-rose-500 dark:group-hover:text-rose-400 transition-colors">
         {item.title}
       </h3>
-      <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
+      <p className="text-slate-500 dark:text-gray-400 text-sm leading-relaxed">{item.description}</p>
     </motion.div>
   )
 }
@@ -48,10 +48,10 @@ function ServiceCard({ item, index }: { item: ServiceItem; index: number }) {
 function ServiceMarquee() {
   const items = [...data.services, ...data.services]
   return (
-    <div className="marquee-wrapper py-4 border-y border-white/5 my-20">
+    <div className="marquee-wrapper py-4 border-y border-black/5 dark:border-white/5 my-20">
       <div className="marquee-track">
         {items.map((s, i) => (
-          <span key={i} className="flex items-center gap-3 text-gray-600 font-medium shrink-0">
+          <span key={i} className="flex items-center gap-3 text-gray-400 dark:text-gray-600 font-medium shrink-0">
             <span className="text-rose-500">✦</span>
             <span>{s.title}</span>
           </span>
@@ -82,10 +82,10 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center mb-16">
           <span className="section-label">Apa yang Kami Tawarkan</span>
-          <h2 className="section-title text-white mt-3">
+          <h2 className="section-title text-slate-900 dark:text-white mt-3">
             Layanan <span className="gradient-text">Unggulan</span>
           </h2>
-          <p className="text-gray-400 max-w-xl mx-auto mt-4">
+          <p className="text-slate-600 dark:text-gray-400 max-w-xl mx-auto mt-4">
             Berbagai solusi kreatif dan teknologi untuk mendukung pertumbuhan bisnis dan kegiatan Anda.
           </p>
         </motion.div>

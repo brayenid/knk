@@ -11,10 +11,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden transition-colors duration-300"
       style={{
         background:
-          'radial-gradient(ellipse at 60% 0%, rgba(225,29,72,0.12) 0%, transparent 60%), radial-gradient(ellipse at 0% 100%, rgba(124,58,237,0.1) 0%, transparent 60%), #050508'
+          'radial-gradient(ellipse at 60% 0%, rgba(225,29,72,0.12) 0%, transparent 60%), radial-gradient(ellipse at 0% 100%, rgba(124,58,237,0.1) 0%, transparent 60%)'
       }}>
       {/* Animated grid background */}
       <div className="absolute inset-0 grid-bg opacity-100 pointer-events-none" />
@@ -51,7 +51,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-none mb-4">
+          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-6 text-slate-900 dark:text-white">
           {data.hero.headline}
           <br />
           <span className="gradient-text">{data.hero.headlineAccent}</span>
@@ -62,7 +62,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mt-6 leading-relaxed">
+          className="text-slate-600 dark:text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mt-6 leading-relaxed">
           {data.hero.subtext}
         </motion.p>
 
@@ -98,11 +98,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="flex flex-wrap items-center justify-center gap-12 mt-16 pt-12 border-t border-white/5">
+          className="flex flex-wrap items-center justify-center gap-12 mt-16 pt-12 border-t border-black/5 dark:border-white/5"
+        >
           {data.hero.stats.map((stat, i) => (
             <div key={i} className="stat-card">
               <div className="stat-value">{stat.value}</div>
-              <div className="text-sm text-gray-400 mt-1">{stat.label}</div>
+              <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">{stat.label}</div>
             </div>
           ))}
         </motion.div> */}
@@ -114,7 +115,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
         onClick={() => handleScroll('#about')}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-gray-500 hover:text-gray-300 transition-colors"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500 hover:text-rose-500 dark:hover:text-gray-300 transition-colors"
         aria-label="Scroll down">
         <span className="text-xs tracking-widest uppercase">Scroll</span>
         <ChevronDown className="w-5 h-5 animate-bounce" />

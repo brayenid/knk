@@ -71,8 +71,8 @@ function Modal({ item, onClose }: { item: PortfolioItem; onClose: () => void }) 
         {/* Content */}
         <div className="p-6">
           <span className="section-label text-xs">{item.category}</span>
-          <h3 className="font-display text-2xl font-bold text-white mt-2 mb-3">{item.title}</h3>
-          <p className="text-gray-400 leading-relaxed">{item.description}</p>
+          <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-white mt-2 mb-3">{item.title}</h3>
+          <p className="text-slate-600 dark:text-gray-400 leading-relaxed">{item.description}</p>
           <div className="flex flex-wrap gap-2 mt-4">
             {item.tags.map((t, i) => (
               <span key={i} className="text-xs px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gray-300">
@@ -118,10 +118,10 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="text-center mb-12">
             <span className="section-label">Karya Kami</span>
-            <h2 className="section-title text-white mt-3">
+            <h2 className="section-title text-slate-900 dark:text-white mt-3">
               Portofolio <span className="gradient-text">Terpilih</span>
             </h2>
-            <p className="text-gray-400 max-w-xl mx-auto mt-4">
+            <p className="text-slate-600 dark:text-gray-400 max-w-xl mx-auto mt-4">
               Sebagian dari proyek dan karya yang telah kami selesaikan bersama klien.
             </p>
           </motion.div>
@@ -140,7 +140,7 @@ export default function Portfolio() {
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   activeCategory === cat
                     ? 'bg-rose-500 text-white shadow-lg shadow-rose-500/30'
-                    : 'text-gray-400 hover:text-white border border-white/10 hover:border-white/20'
+                    : 'text-slate-500 dark:text-gray-400 hover:text-rose-500 dark:hover:text-white border border-black/5 dark:border-white/10 hover:border-black/10 dark:hover:border-white/20'
                 }`}>
                 {cat}
               </button>
